@@ -56,5 +56,10 @@ return require('packer').startup(function(use)
           'stevearc/dressing.nvim', -- optional for vim.ui.select
       },
   }
+
+  use {
+      "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
+  }
 end)
 
