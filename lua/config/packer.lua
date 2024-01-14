@@ -14,10 +14,10 @@ return require('packer').startup(function(use)
   }
 
   use({
-	  "oxfist/night-owl.nvim",
-	  as = 'night-owl',
+      "bluz71/vim-nightfly-colors",
+	  as = 'nightfly',
 	  config = function()
-		  vim.cmd('colorscheme night-owl')
+		  vim.cmd('colorscheme nightfly')
 	  end
   })
 
