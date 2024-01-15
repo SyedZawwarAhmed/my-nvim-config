@@ -64,5 +64,7 @@ return require('packer').startup(function(use)
 
   use ( 'vim-airline/vim-airline' )
 
+  use { 'neoclide/coc.nvim', branch = 'release'}
+
 end)
 
