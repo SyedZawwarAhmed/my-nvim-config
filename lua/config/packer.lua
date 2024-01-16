@@ -14,10 +14,10 @@ return require('packer').startup(function(use)
   }
 
   use({
-      "bluz71/vim-nightfly-colors",
-	  as = 'nightfly',
+      "folke/tokyonight.nvim",
+	  as = 'tokyonight',
 	  config = function()
-		  vim.cmd('colorscheme nightfly')
+		  vim.cmd('colorscheme tokyonight')
 	  end
   })
 
@@ -67,6 +67,12 @@ return require('packer').startup(function(use)
   use { 'neoclide/coc.nvim', branch = 'release'}
 
   use {"gaelph/logsitter.nvim", requires = {"nvim-treesitter/nvim-treesitter"}}
+
+  use ( "tpope/vim-commentary" )
+  
+  use ( "nvim-tree/nvim-tree.lua" )
+
+  use ( "nvim-tree/nvim-web-devicons" )
 
 end)
 
