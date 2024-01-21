@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
     use('theprimeagen/harpoon')
     use('tpope/vim-fugitive')
     use ('lewis6991/gitsigns.nvim')
+    use ('mbbill/undotree')
 
     use {
         'VonHeikemen/lsp-zero.nvim',
