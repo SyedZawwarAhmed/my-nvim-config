@@ -33,6 +33,8 @@ vim.opt.colorcolumn = "180"
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
+vim.opt.cursorline = true
+
 vim.cmd [[
   augroup YankHighlight
     autocmd!
