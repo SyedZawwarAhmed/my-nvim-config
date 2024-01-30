@@ -49,3 +49,8 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.api.nvim_set_keymap('n', '<leader>lg', ':Logsitter<CR>', { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>to", ":tabnew<CR>")
+vim.keymap.set("n", "<leader>tx", ":tabclose<CR>")
+vim.keymap.set("n", "<leader>tn", ":tabn<CR>")
+vim.keymap.set("n", "<leader>tp", ":tabp<CR>")
