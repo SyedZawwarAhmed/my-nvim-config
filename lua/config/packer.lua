@@ -97,4 +97,11 @@ return require('packer').startup(function(use)
       vim.g.user_emmet_mode = 'inv'
     end
   }
+
+  use {
+    'windwp/nvim-ts-autotag',
+    config = function()
+      require('nvim-ts-autotag').setup()
+    end
+  }
 end)
