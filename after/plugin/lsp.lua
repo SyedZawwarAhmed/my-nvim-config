@@ -18,7 +18,7 @@ lsp_zero.on_attach(function(client, bufnr)
     vim.keymap.set("n", '<leader>D', builtin.lsp_type_definitions, opts)
     vim.keymap.set("n", '<leader>ds', builtin.lsp_document_symbols, opts)
     vim.keymap.set("n", '<leader>ws', builtin.lsp_dynamic_workspace_symbols, opts)
-end)
+end) 
 
 require('mason').setup({})
 require('mason-lspconfig').setup({

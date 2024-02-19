@@ -73,30 +73,30 @@ return require('packer').startup(function(use)
 
   use("tpope/vim-surround")
 
-  use {
-    'mattn/emmet-vim',
-    ft = { 'svelte', 'html', 'elixir', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact' },
-    config = function()
-      vim.g.user_emmet_settings = {
-        ['javascript.jsx'] = {
-          extends = 'jsx',
-        },
-        ['javascript.javascriptreact'] = {
-          extends = 'jsx',
-        },
-        ['typescript.typescriptreact'] = {
-          extends = 'jsx',
-        },
-        elixir = {
-          extends = 'html'
-        },
-        eelixir = {
-          extends = 'html'
-        }
-      }
-      vim.g.user_emmet_mode = 'inv'
-    end
-  }
+  -- use {
+  --   'mattn/emmet-vim',
+  --   ft = { 'svelte', 'html', 'elixir', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact' },
+  --   config = function()
+  --     vim.g.user_emmet_settings = {
+  --       ['javascript.jsx'] = {
+  --         extends = 'jsx',
+  --       },
+  --       ['javascript.javascriptreact'] = {
+  --         extends = 'jsx',
+  --       },
+  --       ['typescript.typescriptreact'] = {
+  --         extends = 'jsx',
+  --       },
+  --       elixir = {
+  --         extends = 'html'
+  --       },
+  --       eelixir = {
+  --         extends = 'html'
+  --       }
+  --     }
+  --     vim.g.user_emmet_mode = 'inv'
+  --   end
+  -- }
 
   use {
     'windwp/nvim-ts-autotag',
