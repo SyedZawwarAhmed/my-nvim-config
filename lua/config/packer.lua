@@ -110,4 +110,5 @@ return require('packer').startup(function(use)
   use("christoomey/vim-tmux-navigator")
   use("brenoprata10/nvim-highlight-colors")
   use("mlaursen/vim-react-snippets")
+  use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 end)
