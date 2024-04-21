@@ -107,4 +107,7 @@ return require('packer').startup(function(use)
       require('nvim-ts-autotag').setup()
     end
   }
+  use("christoomey/vim-tmux-navigator")
+  use("brenoprata10/nvim-highlight-colors")
+  use("mlaursen/vim-react-snippets")
 end)
