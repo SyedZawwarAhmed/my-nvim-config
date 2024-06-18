@@ -111,4 +111,5 @@ return require('packer').startup(function(use)
   use("brenoprata10/nvim-highlight-colors")
   use("mlaursen/vim-react-snippets")
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+  use {"lukas-reineke/indent-blankline.nvim"}
 end)
