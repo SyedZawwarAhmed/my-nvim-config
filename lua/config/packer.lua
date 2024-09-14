@@ -74,6 +74,13 @@ return require('packer').startup(function(use)
 
   use("tpope/vim-surround")
 
+  use {
+    "supermaven-inc/supermaven-nvim",
+    config = function()
+      require("supermaven-nvim").setup({})
+    end,
+  }
+
   -- use {
   --   'mattn/emmet-vim',
   --   ft = { 'svelte', 'html', 'elixir', 'javascript', 'typescript', 'javascriptreact', 'typescriptreact' },
