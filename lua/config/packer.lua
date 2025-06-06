@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
       -- Autocompletion
       { 'hrsh7th/nvim-cmp' },
       { 'hrsh7th/cmp-nvim-lsp' },
+      { 'hrsh7th/cmp-path' },
       { 'L3MON4D3/LuaSnip' },
       { 'hrsh7th/cmp-buffer' },
       { 'saadparwaiz1/cmp_luasnip' },
@@ -74,12 +75,12 @@ return require('packer').startup(function(use)
 
   use("tpope/vim-surround")
 
-  use {
-    "supermaven-inc/supermaven-nvim",
-    config = function()
-      require("supermaven-nvim").setup({})
-    end,
-  }
+  -- use {
+  --   "supermaven-inc/supermaven-nvim",
+  --   config = function()
+  --     require("supermaven-nvim").setup({})
+  --   end,
+  -- }
 
   -- use {
   --   'mattn/emmet-vim',

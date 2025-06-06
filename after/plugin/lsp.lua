@@ -1,7 +1,9 @@
+-- Initialize variables
 local lsp_zero = require('lsp-zero')
 local builtin = require('telescope.builtin')
 
-lsp_zero.on_attach(function(_, bufnr)
+-- Define on_attach function for LSP
+local on_attach = function(_, bufnr)
     local opts = { buffer = bufnr, remap = false }
 
     -- vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
@@ -35,6 +37,7 @@ require('mason-lspconfig').setup({
 local cmp = require('cmp')
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
+-- Configure nvim-cmp
 cmp.setup({
     sources = {
         { name = 'path' },
@@ -48,13 +51,6 @@ cmp.setup({
         ['<C-k>'] = cmp.mapping.select_prev_item(cmp_select),
         ['<C-j>'] = cmp.mapping.select_next_item(cmp_select),
         ['<CR>'] = cmp.mapping.confirm({ select = true }),
-        -- ['<C-Space>'] = cmp.mapping.complete(),
+        ['<C-Space>'] = cmp.mapping.complete(),
     }),
-})
-
-lsp_zero.set_sign_icons({
-    error = "❌",
-    warning = "⚠️",
-    info = "ℹ️",
-    hint = "💡",
 })
